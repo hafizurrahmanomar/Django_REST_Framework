@@ -10,7 +10,9 @@ source emyvnv/bin/activate  # On Windows use `myvenv\Scripts\activate`
 # Install Django and Django REST framework into the virtual environment
 
 >pip install django
+
 >pip install pygments
+
 >pip install djangorestframework
 >pip install markdown 
 >pip install django-filter 
