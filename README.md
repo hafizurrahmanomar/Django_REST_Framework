@@ -4,8 +4,14 @@ mkdir Django_Rest_Framework
 cd Django_Rest_Framework
 
 # Create a virtual environment to isolate our package dependencies locally
-python -m venv myvenv
-source emyvnv/bin/activate  # On Windows use `myvenv\Scripts\activate`
+>python -m venv myvenv
+
+# Mac use 
+// source emyvnv/bin/activate 
+
+# On Windows use 
+
+>myvenv\Scripts\activate
 
 # Install Django and Django REST framework into the virtual environment
 
