@@ -1,7 +1,8 @@
 # Create the project directory
 # cmd
-mkdir Django_Rest_Framework
-cd Django_Rest_Framework
+> mkdir Django_Rest_Framework
+
+> cd Django_Rest_Framework
 
 # Create a virtual environment to isolate our package dependencies locally
 >python -m venv myvenv
