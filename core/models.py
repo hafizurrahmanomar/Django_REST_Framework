@@ -15,6 +15,16 @@ class UserManager(BaseUserManager):
 
         return user
 
+    def create_admin_user(self, email, password, **extras):
+        if email == '':
+            raise ValueError("Email address not provided")
+        user = self.model(email=email, **extras)
+        user.set_password(password)
+        user.is_admin = True
+        user.save()
+
+        return user
+
 
 class User(AbstractBaseUser, PermissionsMixin):
     name = models.CharField(max_length=250)
