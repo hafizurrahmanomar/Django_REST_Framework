@@ -129,3 +129,22 @@ DATABASES = {
     }
 }
 ```
+
+# part -03
+
+Docker install by chocolyty
+---
+
+```
+choco install docker-compose
+choco install docker-desktop
+
+```
+
+# After insall than docker on than
+
+```
+docker-compose up
+
+```
+
