@@ -1,53 +1,66 @@
 # Part-01
 # Create the project directory
 # cmd open
-> mkdir Django_Rest_Framework
+```
+ mkdir Django_Rest_Framework
 
-> cd Django_Rest_Framework
-
+ cd Django_Rest_Framework
+```
 # Create a virtual environment to isolate our package dependencies locally
->python -m venv myvenv
+```
+python -m venv myvenv
 
+```
 # Mac use 
 // source emyvnv/bin/activate 
 
 # On Windows use 
+```
+myvenv\Scripts\activate
 
->myvenv\Scripts\activate
-
+```
 # Install Django and Django REST framework into the virtual environment
+```
+pip install django
 
->pip install django
+pip install pygments
 
->pip install pygments
+pip install djangorestframework
 
->pip install djangorestframework
+pip install markdown
 
->pip install markdown
+pip install django-filter
 
->pip install django-filter
+pip freeze > requirements.txt
 
->pip freeze > requirements.txt
+pip install -r requirements.txt
 
->pip install -r requirements.txt
+pip uninstall -r requirements.txt -y
 
->pip uninstall -r requirements.txt -y
+pip install -r requirements.txt
 
->pip install -r requirements.txt
+pip list
 
->pip list
+myvenv\Scripts\deactivate
 
->myvenv\Scripts\deactivate
-
+```
 # VS Code
->code .
+```
+code .
+```
 
 # Set up a new project with a single application
->django-admin startproject app .
+```
+django-admin startproject app .
+
+```
 
 // Note the trailing '.' character
 
->python manage.py startapp core
+```
+python manage.py startapp core
+
+```
 
 # Part-02
 
@@ -69,6 +82,10 @@ python manage.py makemigrations
 then,
 ```
 python manage.py migrate
+```
+```
+pip install psycopg2-binary
+
 ```
 
 ## Running PostgreSQL locally on Docker
