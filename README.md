@@ -31,6 +31,8 @@ pip install markdown
 
 pip install django-filter
 
+pip install pillow
+
 pip freeze > requirements.txt
 
 pip install -r requirements.txt
@@ -75,14 +77,20 @@ Creating super users
 ```
 python manage.py createsuperuser
 ```
-Making DB migrations
+# Making DB migrations
+---
+
 ```
-python manage.py makemigrations
-```
-then,
-```
+# create migrations
 python manage.py migrate
+
+# run all migrations
+python manage.py makemigrations
+
+# run server
+python manage.py runserver
 ```
+
 ```
 pip install psycopg2-binary
 
@@ -130,6 +138,7 @@ DATABASES = {
 }
 ```
 
+
 # part -03
 
 Docker install by chocolyty
@@ -147,4 +156,3 @@ choco install docker-desktop
 docker-compose up
 
 ```
-
