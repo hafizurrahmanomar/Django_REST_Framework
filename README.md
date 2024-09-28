@@ -8,7 +8,7 @@
 ```
 # Create a virtual environment to isolate our package dependencies locally
 ```
-python -m venv myvenv
+python -m venv .venv
 
 ```
 # Mac use 
@@ -16,7 +16,12 @@ python -m venv myvenv
 
 # On Windows use 
 ```
-myvenv\Scripts\activate
+.venv\Scripts\activate
+
+```
+# Add the env folder into .gitignore
+```
+echo '.venv' > .gitignore
 
 ```
 # Install Django and Django REST framework into the virtual environment
@@ -92,7 +97,15 @@ python manage.py runserver
 ```
 
 ```
+#Option one right
+python -m pip install psycopg
+
 pip install psycopg2-binary
+python -m pip install psycopg-binary
+
+pip install psycopg2-binary --force-reinstall --no-cache-dir
+
+pip install psycopg2 -U
 
 ```
 
