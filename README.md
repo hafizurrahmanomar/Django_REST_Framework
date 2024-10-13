@@ -1,112 +1,40 @@
-# Part-01
-# Create the project directory
-# cmd open
-```
- mkdir Django_Rest_Framework
+## Setting up
 
- cd Django_Rest_Framework
+1. Create a virtual environment
 ```
-# Create a virtual environment to isolate our package dependencies locally
+python -m venv .venv 
 ```
-python -m venv .venv
+2. Activate the environment (always activate this while working in this project)
+```
+source .venv/bin/activate (for Mac/Linux)
+.venv\Scripts\Activate.ps1 (for Windows)
+```
 
-```
-# Mac use 
-// source emyvnv/bin/activate 
-
-# On Windows use 
-```
-.venv\Scripts\activate
-
-```
-# Add the env folder into .gitignore
-```
-echo '.venv' > .gitignore
-
-```
-# Install Django and Django REST framework into the virtual environment
-```
+3. Install required packages
+```bash
 pip install django
-
-pip install pygments
-
 pip install djangorestframework
-
-pip install markdown
-
-pip install django-filter
-
-pip install pillow
-
-pip freeze > requirements.txt
-
-pip install -r requirements.txt
-
-pip uninstall -r requirements.txt -y
-
-pip install -r requirements.txt
-
-pip list
-
-myvenv\Scripts\deactivate
-
+pip install pygments
 ```
-# VS Code
-```
-code .
-```
-
-# Set up a new project with a single application
-```
-django-admin startproject app .
-
-```
-
-// Note the trailing '.' character
-
-```
-python manage.py startapp core
-
-```
-
-# Part-02
 
 ## Django Commands
 
-Running server
+1. Running server
 ```
 python manage.py runserver
 ```
 
-Creating super users
+2. Creating super users
 ```
 python manage.py createsuperuser
 ```
-# Making DB migrations
----
-
+3. Making DB migrations
 ```
-# create migrations
-python manage.py migrate
-
-# run all migrations
 python manage.py makemigrations
-
-# run server
-python manage.py runserver
 ```
-
+then,
 ```
-#Option one right
-python -m pip install psycopg
-
-pip install psycopg2-binary
-python -m pip install psycopg-binary
-
-pip install psycopg2-binary --force-reinstall --no-cache-dir
-
-pip install psycopg2 -U
-
+python manage.py migrate
 ```
 
 ## Running PostgreSQL locally on Docker
@@ -149,23 +77,4 @@ DATABASES = {
         'port': '5432'
     }
 }
-```
-
-
-# part -03
-
-Docker install by chocolyty
----
-
-```
-choco install docker-compose
-choco install docker-desktop
-
-```
-
-# After insall than docker on than
-
-```
-docker-compose up
-
 ```
